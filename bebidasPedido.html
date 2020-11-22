@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/style.css">
+    <script language="javascript" src="_javaScript/funcoes.js"></script>
+    <title>Hello Pizza</title>
+</head>
+
+<body>
+    <section>
+
+        <table class="tabelaPedido">
+            <tr>
+                <td>
+                    <img id="CocaColalata" alt="Coca Cola lata"
+                    onclick="abrirPedido('Pedido1B','pCocaColaLata');">
+                </td>
+                <td>
+                    <h2 id="pedidos">Coca-Cola Lata 350ml</h2>
+                </td>
+
+                        <td id="Pedido1B" class="PedidoOcultado">
+                            <h2 id="pedidos">Coca-Cola Lata 350ml </h2>
+                            <h2 id="pCocaColaLata" class="nPedidos"></h2>
+                            <input id="btnExcluirItem" type="button"
+                            onclick="excluirItem('Pedido1B','pCocaColaLata');" value="Excluir">
+                        </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <img id="CocaColaSeiscentos" alt="Coca Cola 600ml" 
+                    onclick="abrirPedido('Pedido2B','pCocaColaSeiscentos');">
+                </td>
+                <td>
+                    <h2 id="pedidos">Coca Cola Pet 600ml </h2>
+                </td>
+
+                    <td id="Pedido2B" class="PedidoOcultado">
+                        <h2 id="pedidos">Coca Cola Pet 600ml </h2>
+                        <h2 id="pCocaColaSeiscentos" class="nPedidos"></h2>
+                        <input id="btnExcluirItem" type="button"
+                        onclick="excluirItem('Pedido2B','pCocaColaSeiscentos');" value="Excluir">
+                    </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <img id="CocaColaDoisL" alt="Coca-Cola 2litros"
+                    onclick="abrirPedido('Pedido3B','pCocaColaDoisL');">
+                </td>
+                <td>
+                    <h2 id="pedidos">Coca-Cola 2L. Pet</h2>
+                </td>
+
+                    <td id="Pedido3B" class="PedidoOcultado">
+                        <h2 id="pedidos">Coca-Cola 2L. Pet</h2>
+                        <h2 id="pCocaColaDoisL" class="nPedidos"></h2>
+                        <input id="btnExcluirItem" type="button"
+                        onclick="excluirItem('Pedido3B','pCocaColaDoisL');" value="Excluir">
+                    </td>
+            </tr>
+
+        </table>
+
+    </section>
+</body>
+</html>

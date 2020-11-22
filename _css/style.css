@@ -1,0 +1,177 @@
+@charset "UTF-8"; /* Pelo mesmo motivo que definimos UTF-8 na HTML*/
+@import url('https://fonts.googleapis.com/css?family=Staatliches'); /* importado diretamente do google fonts no formato css*/
+
+
+*{
+	font-family: 'Courier New', Courier, monospace;
+}
+
+h1,h2,li{
+	color: bisque;
+	word-break: break-all;
+}
+h2#pedidos{
+	font-size: 40px;
+	margin-left: 20px;
+	width: 500px;
+}
+.SubtituloeTexto{
+	text-align: left;
+	width: 600px;
+}
+
+
+.nPedidos{
+	text-align: center;
+	position: relative;
+	display: block;
+}
+
+
+
+p{
+	color: burlywood;
+}
+
+p#pedidos{
+	margin-left: 60px;;	
+}
+
+body {
+	background-image: url("../_img/background-pizza.png");
+	background-size: cover;
+}
+
+
+a{ /*aplica diretamente no texto do link*/
+	text-decoration: none;
+	color: blanchedalmond;
+}
+
+.tabelaPedido{
+	border-spacing: 4px; /* Espaço entre as células*/
+	background-color: rgba(0, 0, 0, 0.596);
+}
+
+.MenuInferior{
+	background-color: rgba(22, 8, 1, 0.849);
+	font-size: 40px;
+	font-weight: bolder;
+	padding: 15px;  /* Tamanho do container */
+	line-height: 100px; /* Espaçamento entre linhas */
+	position: relative;
+	display: block;
+	text-align: center;
+	color: rgba(221, 123, 10, 0.842);
+}
+
+.PedidoOcultado{
+	background-color: rgba(0, 0, 0, 0.596);
+	visibility: hidden;
+}
+
+input#btnExcluirItem{
+	background-color: rgb(160, 0, 0);
+	display: block;
+	margin: auto;
+	position: relative;
+	top: -2px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: x-large;
+	color: burlywood;
+}
+
+
+body#pedido{ /* "#"para id, "." para class */
+	background-image: url("../_img/fornoalenha.jpg");
+	background-size: cover;
+}
+
+iframe#iframePedidos{
+	width: 1400px;
+	height: 580px;
+	margin-bottom: 20px;
+}
+
+div#divPedidos{
+	text-align: center;
+}
+
+figure#containerPizzas figcaption {
+	position: relative;
+	top: 30px; /*Se afasta do que está--- acima*/
+	margin-bottom: 50px; /*Afasta o que está--- abaixo*/
+	font-size: 40px;
+	font-weight: bolder;
+	color: rgb(255, 253, 139);
+	text-shadow: 5px 2px 5px rgb(136, 0, 0);
+}
+
+
+img#PizzaMucarela{
+	content: url("../_img/sabores/Mucarela.png"); /*  Não é imagem de fundo, é conteúdo, então use o content */
+}
+
+
+img#PizzaPortuguesa{
+	content: url("../_img/sabores/Portuguesa.png");
+}
+
+img#PizzaBacon{
+	content: url("../_img/sabores/Bacon.png");
+}
+
+img#PizzaCalabresa{
+	content: url("../_img/sabores/Calabresa.png"); 
+}
+
+img#PizzaChampignon{
+	content: url("../_img/sabores/Champinhon.png");
+}
+
+img#PizzaRucula{
+	content: url("../_img/sabores/Rucula.png");
+}
+
+img#PizzaMargherita{
+	content: url("../_img/sabores/Margheritta.png");
+}
+
+img#PizzaCamarao{
+	content: url("../_img/sabores/Camarao.png");
+}
+
+img#CocaColalata{
+	content: url("../_img/bebidas/cocalataorig.jpg");
+}
+
+img#CocaColaSeiscentos{
+	content: url("../_img/bebidas/Coca-Cola600ml .jpg");
+}
+
+img#CocaColaDoisL{
+	content: url("../_img/bebidas/coca-cola-2-litros.jpg");
+}
+
+
+.fb{
+	content: url("../_img/fb.png");
+	width: 60px;
+}
+
+footer#rodape{
+	position: relative;
+	clear: both; /* Desconsidera a divisão direita/esquerda, jogando o "rodape" para a base. */
+	top: 50px;
+	border-top: 1px solid #606060;
+	padding-top: 5px;
+}
+p#rodape{
+	text-align: center;
+	font-weight: bold;
+	line-height: 70px;;
+	font-size: 20px;
+	color: rgb(250, 196, 87);
+	-webkit-text-stroke-width: 1px; /* largura da borda */
+    -webkit-text-stroke-color: rgba(53, 27, 27, 0.884); /* cor da borda */
+}

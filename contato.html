@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Pizza</title>
+</head>
+<body>
+    <section>
+        <h2>Contato</h2>
+        <form action="http:www.naotemnaotem.com.br/requisicao.php" method="post">
+            <!--Inicia um formulário. Action aponta para o arquivo do servidor encarregado de receber os dados do form. Method diz ao form como deve ser feito o envio. Ex: 
+                get: Passa cada um dos campos pela barra de endereço. + Rápido - Seguro
+                post:  Envia dos dados no "corpo" da requisição HTTP. + Lento + Seguro -->
+            
+            <label for="">Nome: </label> <!--rótulo-->
+            <input type="text" name="nome"/><!--entrada do tipo texto, nome do dado enviado é "nome"-->
+            <label for="">E-Mail: </label>
+            <input type="text" name="email"/>
+            <label for="">Mensagem: </label>
+            <textarea name="mensagem" id="" cols="30" rows="10"></textarea> <!--Elemento criado para texto-->
+            <input type="submit" value="Enviar Mensagem"> 
+            <!--imput do tipo submit serve para submeter o formulário, value altera o título do botão-->
+        </form> 
+    </section>
+</body>
+</html>
