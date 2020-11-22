@@ -6,18 +6,35 @@
 	font-family: 'Courier New', Courier, monospace;
 }
 
+
 h1,h2,li{
 	color: bisque;
-	word-break: break-all;
 }
-h2#pedidos{
-	font-size: 40px;
+
+p{
+	color: burlywood;
+}
+
+@media screen and (max-width: 500px){ /*and (max-width: 768px) { fonte responsiva com media query*/
+	p#pedidos{
+		width: 30px;
+		display: block;
+	}
+}
+
+h2#pedidos{ 
 	margin-left: 20px;
-	width: 500px;
 }
-.SubtituloeTexto{
-	text-align: left;
-	width: 600px;
+
+p#pedidos{
+	margin-left: 30px;
+	max-width: 400px; /*tamanho máximo, podendo variar para menos*/
+}
+
+.PedidoOcultado{ /*trecho escuro do pedido feito*/
+	background-color: rgba(0, 0, 0, 0.596);
+	visibility: hidden;
+	width: 500px;
 }
 
 
@@ -28,19 +45,23 @@ h2#pedidos{
 }
 
 
-
-p{
-	color: burlywood;
-}
-
-p#pedidos{
-	margin-left: 60px;;	
-}
-
-body {
+.fullheight {
+	/*com isso o header ficará sempre com o tamanho da tela */
+	height: 100vh;
+	/*background geralmente uso o modo compacto, mas aqui vou colocar separadamente para explicar cada parte*/
+	/* aqui defino a imagem maior*/
 	background-image: url("../img/background-pizza.png");
+	/*deixa o background com efeito paralax*/
+	background-attachment: fixed;
+	/* cover é para nunca deixar espaço sem imagem*/
 	background-size: cover;
-}
+  }
+
+  .SubtituloeTexto{
+	text-align: left;
+	max-width: 550px;
+	white-space: normal;
+  }
 
 
 a{ /*aplica diretamente no texto do link*/
@@ -55,19 +76,13 @@ a{ /*aplica diretamente no texto do link*/
 
 .MenuInferior{
 	background-color: rgba(22, 8, 1, 0.849);
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: bolder;
-	padding: 15px;  /* Tamanho do container */
 	line-height: 100px; /* Espaçamento entre linhas */
 	position: relative;
 	display: block;
 	text-align: center;
-	color: rgba(221, 123, 10, 0.842);
-}
-
-.PedidoOcultado{
-	background-color: rgba(0, 0, 0, 0.596);
-	visibility: hidden;
+	color: rgba(141, 105, 64, 0.842);
 }
 
 input#btnExcluirItem{
@@ -88,8 +103,8 @@ body#pedido{ /* "#"para id, "." para class */
 }
 
 iframe#iframePedidos{
-	width: 1400px;
-	height: 580px;
+	width: 90%;
+	height: 530px;
 	margin-bottom: 20px;
 }
 
