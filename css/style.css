@@ -38,7 +38,7 @@ p#pedidos{
 }
 
 body {
-	background-image: url("../_img/background-pizza.png");
+	background-image: url("../img/background-pizza.png");
 	background-size: cover;
 }
 
@@ -83,7 +83,7 @@ input#btnExcluirItem{
 
 
 body#pedido{ /* "#"para id, "." para class */
-	background-image: url("../_img/fornoalenha.jpg");
+	background-image: url("../img/fornoalenha.jpg");
 	background-size: cover;
 }
 
@@ -109,53 +109,53 @@ figure#containerPizzas figcaption {
 
 
 img#PizzaMucarela{
-	content: url("../_img/sabores/Mucarela.png"); /*  Não é imagem de fundo, é conteúdo, então use o content */
+	content: url("../img/sabores/Mucarela.png"); /*  Não é imagem de fundo, é conteúdo, então use o content */
 }
 
 
 img#PizzaPortuguesa{
-	content: url("../_img/sabores/Portuguesa.png");
+	content: url("../img/sabores/Portuguesa.png");
 }
 
 img#PizzaBacon{
-	content: url("../_img/sabores/Bacon.png");
+	content: url("../img/sabores/Bacon.png");
 }
 
 img#PizzaCalabresa{
-	content: url("../_img/sabores/Calabresa.png"); 
+	content: url("../img/sabores/Calabresa.png"); 
 }
 
 img#PizzaChampignon{
-	content: url("../_img/sabores/Champinhon.png");
+	content: url("../img/sabores/Champinhon.png");
 }
 
 img#PizzaRucula{
-	content: url("../_img/sabores/Rucula.png");
+	content: url("../img/sabores/Rucula.png");
 }
 
 img#PizzaMargherita{
-	content: url("../_img/sabores/Margheritta.png");
+	content: url("../img/sabores/Margheritta.png");
 }
 
 img#PizzaCamarao{
-	content: url("../_img/sabores/Camarao.png");
+	content: url("../img/sabores/Camarao.png");
 }
 
 img#CocaColalata{
-	content: url("../_img/bebidas/cocalataorig.jpg");
+	content: url("../img/bebidas/cocalataorig.jpg");
 }
 
 img#CocaColaSeiscentos{
-	content: url("../_img/bebidas/Coca-Cola600ml .jpg");
+	content: url("../img/bebidas/Coca-Cola600ml .jpg");
 }
 
 img#CocaColaDoisL{
-	content: url("../_img/bebidas/coca-cola-2-litros.jpg");
+	content: url("../img/bebidas/coca-cola-2-litros.jpg");
 }
 
 
 .fb{
-	content: url("../_img/fb.png");
+	content: url("../img/fb.png");
 	width: 60px;
 }
 
